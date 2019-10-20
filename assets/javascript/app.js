@@ -29,6 +29,10 @@ function countdown() {
                     secs--; 
                     setTimeout('Decrement()', 1000); 
                 } 
+                // and this is where i would put an alert that says hey you have no more time
+                // it would come up with the user's score as well 
+                // it would look very nice 
+                // something like if mins < 0 alert("your time is up")
             } 
         } 
   
