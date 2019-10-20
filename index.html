@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap&subset=japanese" rel="stylesheet">
+    <script src="assets\javascript\app.js"></script>
+    <title>Totoro Trivia</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Totoro Trivia</h1>
+        <p class="lead"> がんばってね！</p>
+    </div>
+    <body onload="countdown();"> 
+      <div class="timer"> 
+           Time left :
+          <input id="minutes" type="text">
+          <input id="seconds" type="text">
+      </div> 
+  </body> 
+  <hr class="my-4">
+  <form id="quiz" name="quiz">
+        <p class="question"> What year was this movie released in the US?</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question1" id="inlineRadio1" value="1998">
+    <label class="form-check-label" for="inlineRadio1">1998</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question1" id="inlineRadio2" value="1993">
+    <label class="form-check-label" for="inlineRadio2">1993</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question1" id="inlineRadio3" value="1996">
+    <label class="form-check-label" for="inlineRadio3">1996</label>
+  </div>
+  <hr class="my-4">
+  <p class="question"> How long is the movie's runtime?</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question2" id="inlineRadio1" value="1hr40m">
+    <label class="form-check-label" for="inlineRadio1">1hr40m</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question2" id="inlineRadio2" value="2hr">
+    <label class="form-check-label" for="inlineRadio2">2hr</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question2" id="inlineRadio3" value="1hr50m">
+    <label class="form-check-label" for="inlineRadio3">1hr50m</label>
+  </div>
+  <hr class="my-4">
+  <p class="question"> How does the family get rid of the soot sprites?</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question3" id="inlineRadio1" value="Laughing">
+    <label class="form-check-label" for="inlineRadio1">Laughing</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question3" id="inlineRadio2" value="Barking">
+    <label class="form-check-label" for="inlineRadio2">Barking</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question3" id="inlineRadio3" value="Singing">
+    <label class="form-check-label" for="inlineRadio3">Singing</label>
+  </div>
+  <hr class="my-4">
+  <p class="question">Where does Satsuke first see Totoro?</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question4" id="inlineRadio1" value="Garden">
+    <label class="form-check-label" for="inlineRadio1">Garden</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question4" id="inlineRadio2" value="School">
+    <label class="form-check-label" for="inlineRadio2">School</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question4" id="inlineRadio3" value="Bus stop">
+    <label class="form-check-label" for="inlineRadio3">Bus stop</label>
+  </div>
+  <hr class="my-4">
+  <p class="question"> What animal tries to take Mei's corn? </p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question5" id="inlineRadio1" value="Goat">
+    <label class="form-check-label" for="inlineRadio1">Goat</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question5" id="inlineRadio2" value="Dog">
+    <label class="form-check-label" for="inlineRadio2">Dog</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question5" id="inlineRadio3" value="Ox">
+    <label class="form-check-label" for="inlineRadio3">Ox</label>
+  </div>
+  <hr class="my-4">
+  <p class="question"> Mei is older than Satsuke</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question6" id="inlineRadio1" value="True">
+    <label class="form-check-label" for="inlineRadio1">True</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question6" id="inlineRadio2" value="False">
+    <label class="form-check-label" for="inlineRadio2">False</label>
+  </div>
+  <hr class="my-4">
+  <p class="question"> Tatsuo, their father, works as a university professor</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question7" id="inlineRadio1" value="True">
+    <label class="form-check-label" for="inlineRadio1">True</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question7" id="inlineRadio2" value="False">
+    <label class="form-check-label" for="inlineRadio2">False</label>
+  </div>
+  <hr class="my-4">
+  <p class="question"> Mei sees Totoro first</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question8" id="inlineRadio1" value="True">
+    <label class="form-check-label" for="inlineRadio1">True</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question8" id="inlineRadio2" value="False">
+    <label class="form-check-label" for="inlineRadio2">False</label>
+  </div>
+  <hr class="my-4">
+  <p class="question"> Totoro gives the sisters a bag of tree nuts to plant</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question9" id="inlineRadio1" value="True">
+    <label class="form-check-label" for="inlineRadio1">True</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question9" id="inlineRadio2" value="False">
+    <label class="form-check-label" for="inlineRadio2">False</label>
+  </div>
+  <hr class="my-4">
+  <p class="question"> Everyone can see the cat bus</p>
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question10" id="inlineRadio1" value="True">
+    <label class="form-check-label" for="inlineRadio1">True</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="question10" id="inlineRadio2" value="False">
+    <label class="form-check-label" for="inlineRadio2">False</label>
+  </div> 
+</form>
+
+<hr class="my-4">
+
+  <input id="button" type="button" value ="I'm finished!" onclick = "check();">
+
+  <div id="after-submit">
+    <p id="number-correct"></p>
+    <p id="number-incorrect"></p>
+  </div>
+  
+ <!-- answers;  
+       1993
+       1hr40m
+       laughing
+       bus stop
+       goat
+       True or False
+       - f
+       - t
+       - t
+       - t
+       - f
+   </p> -->
+</body>
+</html>

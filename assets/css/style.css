@@ -1,0 +1,32 @@
+.jumbotron {
+    align-content: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url("https://cdn.vox-cdn.com/thumbor/L7RY15nCjPfcm8hE_TsD5jO1Sws=/0x0:1920x1080/1200x800/filters:focal(736x383:1042x689)/cdn.vox-cdn.com/uploads/chorus_image/image/55049323/totoro.0.jpg");
+}
+
+.display-4 { 
+    color: black;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.lead { 
+    font-family: 'Sawarabi Mincho', sans-serif;
+    color: black;
+}
+
+.timer { 
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.form-check { 
+    font-family: 'Sawarabi Mincho', sans-serif;
+    align-content: center;
+}
+.question { 
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+#after-submit { 
+    visibility: hidden;
+}
